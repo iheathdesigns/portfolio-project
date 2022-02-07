@@ -1,25 +1,26 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Particles from 'react-tsparticles';
+// import Particles from 'react-tsparticles';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import { AboutMe } from './components/AboutMe';
+import { Services } from './components/Services';
 
 function App() {
 
-  const particlesInit = (main) => {
-    console.log(main);
+  // const particlesInit = (main) => {
+  //   console.log(main);
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
+  //   // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  // };
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
 
   return (
 <>
-<Particles
+{/* <Particles
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -100,10 +101,11 @@ function App() {
         },
         detectRetina: true,
       }}
-    />
+    /> */}
 <Navbar />
   <Header />
   <AboutMe />
+  <Services />
 </>
   
     
