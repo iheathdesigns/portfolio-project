@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 const Contacts = () => {
 
     const [successMessage, setSuccessMessage] = useState("");
-    const { register, handleSubmit, errors } = useForm()
+    const { register, handleSubmit, errors } = useForm();
 
     const serviceID = 'service_ID'
     const templateID = 'template_ID'
@@ -37,7 +37,7 @@ const Contacts = () => {
     }
 
   return (
-  <div className='contacts'>
+  <div id="contact" className='contacts'>
       <div className="text-center">
       <h1>contact me</h1>
       <p>Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
